@@ -2,13 +2,13 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-register',
   standalone: true,
   imports: [
     CommonModule,
   ],
-  templateUrl: "./Home.component.html",
-  styleUrl: "./Home.component.css",
+  templateUrl: "./Register.component.html",
+  styleUrl: './Register.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomeComponent { }
+export class RegisterComponent { }
