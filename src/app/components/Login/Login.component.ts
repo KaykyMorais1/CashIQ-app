@@ -6,6 +6,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { AnimationItem } from 'lottie-web';
 import { FormControl, FormGroup } from '@angular/forms';
 import { LottieComponent, AnimationOptions } from 'ngx-lottie';
+import axios from 'axios';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -19,6 +21,8 @@ import { LottieComponent, AnimationOptions } from 'ngx-lottie';
 })
 export class LoginComponent {
 
+  constructor(private router: Router) {}
+
   options: AnimationOptions = {
     path: './assets/animation.json',
   };
@@ -31,6 +35,7 @@ export class LoginComponent {
 
   login() {
     console.log("test");
+    this.router.navigate(["/home"]);
     // Autenticação do usuário
   }
 

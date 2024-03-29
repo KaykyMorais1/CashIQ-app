@@ -4,11 +4,11 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class LoginService {
+export class RegisterService {
 
   constructor(private http: HttpClient) { }
 
-  login(user: any, password: any) {
+  register(user: any, password: any) {
       const body = null
       this.http.post('localhost:4000', body);
   }

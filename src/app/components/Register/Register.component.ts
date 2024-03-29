@@ -11,4 +11,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './Register.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class RegisterComponent { }
+export class RegisterComponent {
+
+  register() {}
+}

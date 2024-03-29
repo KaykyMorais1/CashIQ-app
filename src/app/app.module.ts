@@ -1,9 +1,11 @@
 import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
+import { AppRoutingModule } from "./app.routes";
 
 @NgModule({
     imports:[
-        FormsModule
+        FormsModule,
+        AppRoutingModule
     ]
 })
 
