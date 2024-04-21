@@ -1,27 +1,25 @@
-import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { MatSelectModule } from '@angular/material/select';
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
 import { AnimationItem } from 'lottie-web';
-import { FormControl, FormGroup } from '@angular/forms';
-import { LottieComponent, AnimationOptions } from 'ngx-lottie';
-import axios from 'axios';
+import { AnimationOptions } from 'ngx-lottie';
 import { Router } from '@angular/router';
+import { User } from '../../models/User.model';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
-  standalone: true,
-  imports: [
-    CommonModule, MatFormFieldModule, MatInputModule, MatSelectModule, LottieComponent
-  ],
   templateUrl: "./Login.component.html",
   styleUrl: "./Login.component.css",
+  standalone: true,
+  imports: [FormsModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LoginComponent {
 
-  constructor(private router: Router) {}
+  user = new User();
+  email = '';
+  senha = '';
+
+  constructor(private router: Router) { }
 
   options: AnimationOptions = {
     path: './assets/animation.json',
@@ -34,6 +32,7 @@ export class LoginComponent {
   }
 
   login() {
+
     console.log("test");
     this.router.navigate(["/home"]);
     // Autenticação do usuário
