@@ -1,16 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { User } from '../../models/User.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RegisterService {
 
-  constructor(private http: HttpClient) { }
+  constructor() { }
 
-  register(user: any, password: any) {
-      const body = null
-      this.http.post('localhost:4000', body);
+  register(user: User) {
+    console.log("Usuario: ", user)
   }
 
 }

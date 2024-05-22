@@ -44,6 +44,16 @@
   background-color: #d9dbe9;
 }
 
+.inputInvalid {
+  margin-left: 8px;
+  height: 2.5rem;
+  width: 17rem;
+  margin-bottom: 1rem;
+  border: 2px solid red;
+  border-radius: 0.4rem;
+  background-color: #d9dbe9;
+}
+
 .inputs {
   display: flex;
   flex-direction: column;

@@ -16,7 +16,6 @@ import { RouterOutlet } from "@angular/router";
         RouterOutlet
     ],
     declarations: [
-        RegisterComponent,
 
     ],
     bootstrap: [],

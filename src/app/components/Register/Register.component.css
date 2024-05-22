@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap");
 
-a {
+.pwdRecover {
   font-family: Nunito, sans-serif;
   color: white;
 }
@@ -31,6 +31,7 @@ a {
   text-align: center;
   margin: 0px;
   width: 100%;
+  margin: 1rem;
 }
 
 .input {
@@ -39,6 +40,16 @@ a {
   width: 17rem;
   margin-bottom: 1rem;
   border: 2px solid transparent;
+  border-radius: 0.4rem;
+  background-color: #d9dbe9;
+}
+
+.inputInvalid {
+  margin-left: 8px;
+  height: 2.5rem;
+  width: 17rem;
+  margin-bottom: 1rem;
+  border: 2px solid red;
   border-radius: 0.4rem;
   background-color: #d9dbe9;
 }
@@ -58,6 +69,7 @@ a {
   cursor: pointer;
   display: flex;
   align-items: center;
+  margin: 1rem;
 }
 
 .idk {
