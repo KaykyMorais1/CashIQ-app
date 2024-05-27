@@ -1,0 +1,20 @@
+<div class="main">
+    <div class="form p-5 col-4">
+      <h1 class="title">Cadastro</h1>
+      <div class="inputs">
+        <p style="color: rgb(255, 0, 0);" *ngIf="!isValid">Favor, preencher os campos abaixo!</p>
+        <input type="text" [ngClass]="{ 'input': isValid, 'inputInvalid': !isValid }" placeholder="Nome" [(ngModel)]="this.user.name" />
+        <input type="text" [ngClass]="{ 'input': isValid, 'inputInvalid': !isValid }" placeholder="Sobrenome" [(ngModel)]="this.user.lastName" />
+        <input type="text" [ngClass]="{ 'input': isValid, 'inputInvalid': !isValid }" placeholder="Email" [(ngModel)]="this.user.email" />
+        <input type="text" [ngClass]="{ 'input': isValid, 'inputInvalid': !isValid }" placeholder="Senha" [(ngModel)]="this.user.password" />
+      </div>
+      <!-- <div class="idk">
+        <div><input type="checkbox" /><a class="pwdRecover">Lembrar senha</a></div>
+        <a class="pwdRecover">Esqueci a senha</a>
+      </div> -->
+      <div class="loginBtn" (click)="register()">
+        <p class="title">Cadastrar</p>
+      </div>
+      <p class="pwdRecover">Já possui conta? <a class="pwdRecover" href="/"><b>Entre aqui!</b></a></p>
+    </div>
+  </div>
